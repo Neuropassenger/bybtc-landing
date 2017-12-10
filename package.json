@@ -1,0 +1,26 @@
+{
+  "name": "bybtc-landing",
+  "version": "1.0.0",
+  "description": "Landing Page for byBTC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neuropassenger/bybtc-landing.git"
+  },
+  "keywords": [
+    "landing",
+    "bybtc"
+  ],
+  "author": "Oleg Sokolov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Neuropassenger/bybtc-landing/issues"
+  },
+  "homepage": "https://github.com/Neuropassenger/bybtc-landing#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

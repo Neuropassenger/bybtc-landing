@@ -5,3 +5,10 @@
   font-weight: bold;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/open-sans/OpenSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}

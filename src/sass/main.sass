@@ -3,6 +3,7 @@
 @import "../sass/fonts.sass"
 
 $pbw: 1180px // Базовая ширина страницы
+$accent-color: #58b400 // Ацкентный цвет
 
 /*body
 	box-sizing: content-box
@@ -12,6 +13,8 @@ $pbw: 1180px // Базовая ширина страницы
 .page-header 
 	background-color: #474a5c
 	height: 100vh
+	display: flex
+	flex-direction: column
 
 .top-line
 	background-color: #2f313d
@@ -72,3 +75,27 @@ $pbw: 1180px // Базовая ширина страницы
 			height: 100%
 			weight: 100%
 
+.slide
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	margin:
+		top: auto
+		bottom: auto
+	a
+		margin-top: 100px
+		margin-bottom: 50px
+		padding: 20px
+		text-transform: uppercase
+		text-decoration: none
+		color: #fff
+		font:
+			family: 'Open Sans'
+			size: 24px
+		border:
+			style: solid
+			radius: 4px
+			width: 3px
+		&:hover
+			color: $accent-color

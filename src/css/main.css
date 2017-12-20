@@ -135,8 +135,8 @@ table {
   background-color: #82838b;
   -webkit-border-radius: 100%;
           border-radius: 100%;
-  height: 75px;
-  width: 75px;
+  height: 63px;
+  width: 63px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -157,8 +157,8 @@ table {
 
 .rounded-image-wrapper .rounded-image {
   display: inline-block;
-  height: 65px;
-  width: 65px;
+  height: 55px;
+  width: 55px;
   -webkit-border-radius: 100%;
           border-radius: 100%;
   background-image: url("../img/portrait.jpg");

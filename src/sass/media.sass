@@ -1,17 +1,27 @@
+@import "../sass/base-settings.sass"
+
 /*==========  Desktop First Method  ==========*/
+
+@media only screen and (max-width : 1600px)
+	/*.capabilities
+		min-height: 700px
+		background: linear-gradient(-2deg, #fff 15%, $accent-color 15%, $accent-color 85%, $dark-grey 85%)*/
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	.slide
-		a
-			margin:
-				top: 40px
-				bottom: 20px
+	.capabilities
+		.content
+			.item
+				&:nth-child(2)
+					margin:
+						right: 100px
+						left: 100px
 
-	.top-line-content
-		padding:
-			left: 30px
-			right: 30px
+	.top-line
+		.content
+			padding:
+				left: 30px
+				right: 30px
 
 	.top-logo
 		display: none
@@ -35,19 +45,32 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
+	.capabilities
+		.content
+			flex-direction: column
+			align-items: center
+			margin:
+				top: 200px
+				bottom: 200px
+			.item:nth-child(2)
+				margin:
+					top: 70px
+					bottom: 70px
+
 	.main-menu
 		display: none
 
-	.top-line-content
-		padding:
-		.user-name
-			display: none
+	.top-line
+		.content
+			padding:
+			.user-name
+				display: none
 	/**/
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	
+
 	/*Disable Animation on Mobile Devices*/
 	.animated
 		/*CSS transitions*/

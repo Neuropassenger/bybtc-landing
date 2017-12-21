@@ -1,11 +1,7 @@
 @import "../css/reset"
 //@import "../libs/bootstrap/bootstrap-grid.min"
-@import "../sass/fonts.sass"
 @import "../sass/media.sass"
-
-$pbw: 1180px // Базовая ширина страницы
-$accent-color: #58b400 // Ацкентный цвет
-$dark-grey: #474a5c // Темно-серый цвет
+@import "../sass/base-settings.sass"
 
 /*body
 	box-sizing: content-box
@@ -23,11 +19,9 @@ $dark-grey: #474a5c // Темно-серый цвет
 	min-height: 105px
 	display: flex
 	justify-content: center
-
-.top-line-content
-	width: $pbw
-	display: flex
-	align-items: center
+	.content
+		display: flex
+		align-items: center
 
 .top-logo
 	//margin-right: auto
@@ -62,14 +56,15 @@ $dark-grey: #474a5c // Темно-серый цвет
 	justify-content: center
 	align-items: center
 	&:hover
-		background-color: #58b400
+		background-color: $accent-color
 	.rounded-image
+		box-shadow: inset 9px -4px 210px 41px rgba(71,74,92,0.3)
+		opacity: 1
 		display: inline-block
 		height: 55px
 		width: 55px
 		border-radius: 100%
 		background:
-			image: url('../img/portrait.jpg')
 			size: cover
 			position-x: center
 		a
@@ -113,8 +108,79 @@ $dark-grey: #474a5c // Темно-серый цвет
 		right: 50px
 
 .capabilities
-	min-height: 700px
+	display: flex
+	min-height: 490px
 	background: linear-gradient(-2deg, #fff 10%, $accent-color 10%, $accent-color 90%, $dark-grey 90%)
+	.content
+		display: flex
+		align-content: center
+		color: #fff
+		margin:
+			top: 100px
+			bottom: 100px
+		.item
+			flex-grow: 1
+			max-width: 300px
+			min-height: 200px
+			text-align: center
+			&:nth-child(2)
+				margin:
+					right: 200px
+					left: 200px
+			h3
+				text-transform: uppercase
+				font:
+					family: 'Myriad Pro'
+					weight: bold
+					size: 18px
+				margin:
+					top: 20px
+			.item-separator
+				display: block
+				width: 100px
+				border:
+					bottom: 
+						width: 1px
+						style: solid
+						color: #fff
+				margin:
+					bottom: 20px
+					left: auto
+					right: auto
+					top: auto
+
+			p
+				font:
+					family: 'Myriad Pro'
+					weight: normal
+					size: 16px
+				letter-spacing: 0.1em
+			.item-more
+				display: inline-block
+				margin-top: 20px
+				padding: 
+					top: 15px
+					bottom: 15px
+					left: 10px
+					right: 10px
+				text-transform: uppercase
+				text-decoration: none
+				color: #fff
+				font:
+					family: 'Open Sans'
+					size: 16px
+				border:
+					style: solid
+					radius: 4px
+					width: 3px
+				&:hover
+					background: rgba(255, 255, 255, 0.2)
+
+.content
+	width: $pbw
+	margin:
+		left: auto
+		right: auto
 
 .hamburger
 	color: #fff

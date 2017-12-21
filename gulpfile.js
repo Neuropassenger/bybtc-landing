@@ -28,7 +28,7 @@ gulp.task('min-css', ['sass'] , function() {
 gulp.task('min-js', function() {
 	return gulp.src([
 			'src/libs/jquery/dist/jquery.js',
-			'src/libs/owl.carousel/src/js/owl.carousel.js'
+			//'src/libs/owl.carousel/src/js/owl.carousel.js'
 		])
 	.pipe(concat('libs.min.js'))
 	.pipe(uglifyJs())
@@ -62,6 +62,9 @@ gulp.task('build', ['clean', 'min-css', 'min-js'], function() {
 
 	var buildFonts = gulp.src('src/fonts/**/*')
 	.pipe(gulp.dest('dist/fonts'));
+
+	var buildFonts = gulp.src('src/img/**/*')
+	.pipe(gulp.dest('dist/img'));
 
 	var buildJs = gulp.src('src/js/**/*')
 	.pipe(gulp.dest('dist/js'));

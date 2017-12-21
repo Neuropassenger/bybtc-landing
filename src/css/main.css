@@ -106,12 +106,7 @@ table {
           align-items: center;
 }
 
-.top-logo {
-  margin-right: auto;
-}
-
 .top-navigation {
-  margin-left: auto;
   font-family: 'Lato';
   font-weight: bold;
   font-size: 14px;
@@ -129,7 +124,7 @@ table {
 }
 
 .top-navigation ul li {
-  display: inline;
+  display: inline-block;
   text-transform: uppercase;
   margin-right: 15px;
 }
@@ -228,4 +223,20 @@ table {
 
 .slide a:hover {
   color: #58b400;
+}
+
+.user-name a {
+  color: #58b400 !important;
+}
+
+.main-menu {
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.capabilities {
+  min-height: 490px;
+  background: -webkit-linear-gradient(92deg, #fff 15%, #58b400 15%, #58b400 85%, #474a5c 85%);
+  background: -o-linear-gradient(92deg, #fff 15%, #58b400 15%, #58b400 85%, #474a5c 85%);
+  background: linear-gradient(-2deg, #fff 15%, #58b400 15%, #58b400 85%, #474a5c 85%);
 }

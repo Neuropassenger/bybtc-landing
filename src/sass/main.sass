@@ -4,14 +4,15 @@
 
 $pbw: 1180px // Базовая ширина страницы
 $accent-color: #58b400 // Ацкентный цвет
+$dark-grey: #474a5c // Темно-серый
 
 /*body
 	box-sizing: content-box
 	width: $page-basic-width
 	padding: auto*/
 
-.page-header 
-	background-color: #474a5c
+.page-header
+	background-color: $dark-grey
 	height: 100vh
 	display: flex
 	flex-direction: column
@@ -28,10 +29,10 @@ $accent-color: #58b400 // Ацкентный цвет
 	align-items: center
 
 .top-logo
-	margin-right: auto
+	//margin-right: auto
 
 .top-navigation
-	margin-left: auto
+	//margin-left: auto
 	font:
 		family: 'Lato'
 		weight: bold
@@ -40,7 +41,7 @@ $accent-color: #58b400 // Ацкентный цвет
 		display: flex
 		align-items: center
 		li
-			display: inline
+			display: inline-block
 			text-transform: uppercase
 			margin-right: 15px
 			&:last-child
@@ -99,3 +100,16 @@ $accent-color: #58b400 // Ацкентный цвет
 			width: 3px
 		&:hover
 			color: $accent-color
+
+.user-name
+	a
+		color: $accent-color !important
+
+.main-menu 
+	margin:
+		left: auto
+		right: 50px
+
+.capabilities
+	min-height: 490px
+	background: linear-gradient(-2deg, #fff 15%, $accent-color 15%, $accent-color 85%, $dark-grey 85%)

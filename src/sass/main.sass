@@ -1,6 +1,7 @@
 @import "../css/reset"
 //@import "../libs/bootstrap/bootstrap-grid.min"
 @import "../sass/fonts.sass"
+@import "../sass/media.sass"
 
 $pbw: 1180px // Базовая ширина страницы
 $accent-color: #58b400 // Ацкентный цвет
@@ -85,8 +86,9 @@ $dark-grey: #474a5c // Темно-серый цвет
 		top: auto
 		bottom: auto
 	a
-		margin-top: 100px
-		margin-bottom: 50px
+		margin:
+			top: 40px
+			bottom: 20px
 		padding: 20px
 		text-transform: uppercase
 		text-decoration: none
@@ -111,5 +113,50 @@ $dark-grey: #474a5c // Темно-серый цвет
 		right: 50px
 
 .capabilities
-	min-height: 490px
-	background: linear-gradient(-2deg, #fff 15%, $accent-color 15%, $accent-color 85%, $dark-grey 85%)
+	min-height: 700px
+	background: linear-gradient(-2deg, #fff 10%, $accent-color 10%, $accent-color 90%, $dark-grey 90%)
+
+.hamburger
+	color: #fff
+	z-index: 10
+	margin:
+		left: auto
+		right: auto
+
+.mobile-menu
+	&-active
+		transform: translatey(0%) !important;
+	top: 0
+	left: 0
+	height: 100vh
+	width: 100%
+	position: fixed
+	display: flex
+	justify-content: center
+	align-items: center
+	background: rgba(71, 74, 92, 0.9)
+	z-index: 5
+	flex-direction: column
+	transform: translatey(-100%)
+	transition: 0.3s
+	ul
+		width: 100%
+		display: flex
+		flex-direction: column
+		align-items: center
+		li
+			width: 100%
+			padding:
+				top: 12px
+				bottom: 12px
+			text-align: center
+			&:hover
+				background: rgba(88, 180, 0, 0.7)
+	a
+		color: #fff
+		text-decoration: none
+		text-transform: uppercase
+		font:
+			family: 'Lato'
+			weight: bold
+			size: 24px

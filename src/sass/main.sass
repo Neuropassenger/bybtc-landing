@@ -110,7 +110,7 @@
 .capabilities
 	display: flex
 	min-height: 490px
-	background: linear-gradient(-2deg, #fff 10%, $accent-color 10%, $accent-color 90%, $dark-grey 90%)
+	background: linear-gradient(-2deg, #f7f7f7 10%, $accent-color 10%, $accent-color 90%, $dark-grey 90%)
 	.content
 		display: flex
 		align-content: center
@@ -120,13 +120,13 @@
 			bottom: 100px
 		.item
 			flex-grow: 1
-			max-width: 300px
+			max-width: 320px
 			min-height: 200px
 			text-align: center
 			&:nth-child(2)
 				margin:
-					right: 200px
-					left: 200px
+					right: 120px
+					left: 120px
 			h3
 				text-transform: uppercase
 				font:
@@ -226,3 +226,38 @@
 			family: 'Lato'
 			weight: bold
 			size: 24px
+
+.catalog
+	background-color: #f7f7f7
+	padding-top: 60px
+	.content
+		max-width: 100%
+	.fullwidth-menu
+		display: flex
+		justify-content: center
+		ul
+			li
+				display: inline-block
+				margin-left: 25px
+				a
+					color: #000
+					text-decoration: none
+					font: 
+						family: 'Myriad Pro'
+						font-weight: normal
+						size: 25px
+					&:hover
+						color: $accent-color
+
+.about
+	background: linear-gradient(-2deg, #e7e7e7 10%, $dark-grey 10%, $dark-grey 90%, #f7f7f7 90%)
+	min-height: 500px
+	.content
+		padding-top: 90px
+		max-width: 100%
+		color: #fff
+		h2
+			text-align: center
+			font:
+				family: 'Open Sans'
+				size: 38px

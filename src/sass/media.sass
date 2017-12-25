@@ -46,25 +46,33 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	.capabilities
+		background: linear-gradient(-2deg, #f7f7f7 3%, $accent-color 3%, $accent-color 97%, $dark-grey 97%)
 		.content
 			flex-direction: column
 			align-items: center
 			margin:
-				top: 200px
-				bottom: 200px
+				top: 50px
+				bottom: 50px
 			.item:nth-child(2)
 				margin:
+					right: 0
+					left: 0
 					top: 70px
 					bottom: 70px
-
 	.main-menu
 		display: none
 
 	.top-line
 		.content
-			padding:
 			.user-name
 				display: none
+
+	.catalog
+		.content
+			.fullwidth-menu
+				display: none
+	/*.about
+		background: linear-gradient(-2deg, #e7e7e7 5%, $dark-grey 5%, $dark-grey 95%, #f7f7f7 95%)*/
 	/**/
 
 

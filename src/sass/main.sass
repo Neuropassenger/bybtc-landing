@@ -229,25 +229,108 @@
 
 .catalog
 	background-color: #f7f7f7
-	padding-top: 60px
+	padding:
+		top: 60px
+		bottom: 60px
 	.content
-		max-width: 100%
-	.fullwidth-menu
 		display: flex
-		justify-content: center
-		ul
-			li
-				display: inline-block
-				margin-left: 25px
-				a
-					color: #000
-					text-decoration: none
-					font: 
-						family: 'Myriad Pro'
-						font-weight: normal
-						size: 25px
-					&:hover
-						color: $accent-color
+		flex-direction: column
+		max-width: 100%
+		h2
+			display: inline-block
+			margin:
+				left: auto
+				right: auto
+			font:
+				family: 'Open Sans'
+				size: 38px
+				weight: bold
+			letter-spacing: 3px
+			margin-bottom: 20px
+			text-transform: uppercase
+			color: #2f313d
+			border:
+					bottom: 
+						width: 2px
+						style: solid
+						color: #2f313d
+			padding-bottom: 20px
+		.fullwidth-menu
+			display: flex
+			justify-content: center
+			ul
+				li
+					display: inline-block
+					margin-left: 25px
+					a
+						color: #000
+						text-decoration: none
+						font: 
+							family: 'Myriad Pro'
+							font-weight: normal
+							size: 25px
+						&:hover
+							color: $accent-color
+		.categories
+			margin-top: 30px
+			.items
+				display: flex
+				flex-wrap: wrap
+				.item
+					margin-top: 40px
+					width: 33%
+					.product-pic
+						margin: auto
+						max-width: 250px
+						height: 200px
+						background:
+							repeat: no-repeat
+							size: contain
+							position-x: center
+						a
+							display: block
+							height: 100%
+							weight: 100%
+					h3
+						max-width: 250px
+						text-align: center
+						margin:
+							top: 20px
+							left: auto
+							right: auto
+						font:
+							family: 'Myriad Pro'
+							weight: normal
+							size: 18px
+					span
+						margin-top: 5px
+						display: inline-block
+						width: 100%
+						text-align: center
+						font:
+							family: 'Myriad Pro'
+							weight: bold
+							size: 26px
+	.show-full-catalog
+		display: inline-block
+		margin:
+			top: 60px
+			bottom: 20px
+			left: auto
+			right: auto
+		padding: 20px
+		text-transform: uppercase
+		text-decoration: none
+		color: $dark-grey
+		font:
+			family: 'Open Sans'
+			size: 24px
+		border:
+			style: solid
+			radius: 4px
+			width: 3px
+		&:hover
+			color: $accent-color
 
 .about
 	background: linear-gradient(-2deg, #e7e7e7 10%, $dark-grey 10%, $dark-grey 90%, #f7f7f7 90%)

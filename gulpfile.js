@@ -27,8 +27,8 @@ gulp.task('min-css', ['sass'] , function() {
 
 gulp.task('min-js', function() {
 	return gulp.src([
-			'src/libs/jquery/dist/jquery.js',
-			//'src/libs/owl.carousel/src/js/owl.carousel.js'
+			'src/libs/jquery/dist/jquery.min.js',
+			'src/libs/owl.carousel/src/js/owl.carousel.js'
 		])
 	.pipe(concat('libs.min.js'))
 	.pipe(uglifyJs())

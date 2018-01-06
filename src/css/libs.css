@@ -1620,3 +1620,12 @@
       -ms-transform: rotate(-90deg);
           transform: rotate(-90deg);
 }
+
+/* 
+ * 	Owl Carousel - Auto Height Plugin
+ */
+.owl-height {
+  -webkit-transition: height 500ms ease-in-out;
+  -o-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out;
+}

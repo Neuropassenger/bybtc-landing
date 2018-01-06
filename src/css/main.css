@@ -716,3 +716,7 @@ table {
 .accent-text-color {
   color: #58b400 !important;
 }
+
+.cat {
+  height: auto;
+}

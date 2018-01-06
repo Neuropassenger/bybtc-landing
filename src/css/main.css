@@ -611,6 +611,15 @@ table {
   margin-top: 30px;
 }
 
+.catalog .content .categories .cat > h3 {
+  color: #58b400;
+  margin-top: 50px;
+  text-align: center;
+  font-family: 'Open Sans';
+  font-size: 38px;
+  font-weight: bold;
+}
+
 .catalog .content .categories .items {
   display: -webkit-box;
   display: -webkit-flex;
@@ -702,4 +711,8 @@ table {
   text-align: center;
   font-family: 'Open Sans';
   font-size: 38px;
+}
+
+.accent-text-color {
+  color: #58b400 !important;
 }

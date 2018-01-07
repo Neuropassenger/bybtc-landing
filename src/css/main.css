@@ -695,9 +695,9 @@ table {
 }
 
 .about {
-  background: -webkit-linear-gradient(92deg, #e7e7e7 10%, #474a5c 10%, #474a5c 90%, #f7f7f7 90%);
-  background: -o-linear-gradient(92deg, #e7e7e7 10%, #474a5c 10%, #474a5c 90%, #f7f7f7 90%);
-  background: linear-gradient(-2deg, #e7e7e7 10%, #474a5c 10%, #474a5c 90%, #f7f7f7 90%);
+  background: -webkit-linear-gradient(92deg, #e7e7e7 10%, #2f313d 10%, #2f313d 90%, #f7f7f7 90%);
+  background: -o-linear-gradient(92deg, #e7e7e7 10%, #2f313d 10%, #2f313d 90%, #f7f7f7 90%);
+  background: linear-gradient(-2deg, #e7e7e7 10%, #2f313d 10%, #2f313d 90%, #f7f7f7 90%);
   min-height: 500px;
 }
 
@@ -713,10 +713,67 @@ table {
   font-size: 38px;
 }
 
+.about .content article {
+  margin-top: 40px;
+  font-family: 'Myriad Pro';
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 73px;
+     -moz-column-gap: 73px;
+          column-gap: 73px;
+  -webkit-column-width: 550px;
+     -moz-column-width: 550px;
+          column-width: 550px;
+}
+
+.about .content article p {
+  margin-top: 40px;
+}
+
+.about .content article p:first-child {
+  margin-top: 0px;
+}
+
 .accent-text-color {
   color: #58b400 !important;
 }
 
 .cat {
   height: auto;
+}
+
+.private-ads {
+  background: -webkit-linear-gradient(92deg, #2f313d 10%, #e7e7e7 10%, #e7e7e7 90%, #e7e7e7 90%);
+  background: -o-linear-gradient(92deg, #2f313d 10%, #e7e7e7 10%, #e7e7e7 90%, #e7e7e7 90%);
+  background: linear-gradient(-2deg, #2f313d 10%, #e7e7e7 10%, #e7e7e7 90%, #e7e7e7 90%);
+  min-height: 500px;
+}
+
+.private-ads .content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.private-ads .content .iphone-ads {
+  width: 45%;
+  background-image: url("../img/iphone.png");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position-x: center;
+  height: 800px;
+}
+
+.private-ads .content .private-ads-text {
+  width: 45%;
 }

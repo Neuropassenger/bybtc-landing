@@ -15,7 +15,7 @@
 	flex-direction: column
 
 .top-line
-	background-color: #2f313d
+	background-color: $very-dark-grey
 	min-height: 105px
 	display: flex
 	justify-content: center
@@ -342,7 +342,7 @@
 			color: $accent-color
 
 .about
-	background: linear-gradient(-2deg, #e7e7e7 10%, $dark-grey 10%, $dark-grey 90%, #f7f7f7 90%)
+	background: linear-gradient(-2deg, $very-light-grey 10%, $very-dark-grey 10%, $very-dark-grey 90%, #f7f7f7 90%)
 	min-height: 500px
 	.content
 		padding-top: 90px
@@ -353,9 +353,41 @@
 			font:
 				family: 'Open Sans'
 				size: 38px
+		article
+			margin-top: 40px
+			font:
+				family: 'Myriad Pro'
+				weight: normal
+				size: 16px
+			line-height: 25px
+			letter-spacing: 0.1em
+			column-count: 2
+			column-gap: 73px
+			column-width: 550px
+			p
+				margin-top: 40px
+				&:first-child
+					margin-top: 0px
 
 .accent-text-color
 	color: $accent-color !important
 
 .cat
 	height: auto
+
+.private-ads
+	background: linear-gradient(-2deg, $very-dark-grey 10%, $very-light-grey 10%, $very-light-grey 90%, $very-light-grey 90%)
+	min-height: 500px
+	.content
+		display: flex
+		justify-content: space-between
+		.iphone-ads
+			width: 45%
+			background: 
+				image: url('../img/iphone.png');
+				size: cover
+				position-x: center
+			height: 800px
+		.private-ads-text
+			width: 45%
+		

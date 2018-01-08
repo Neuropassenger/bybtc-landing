@@ -16,7 +16,7 @@ $(document).ready(function(){
   	autoHeight: true,
     autoplay: true,
     margin: 10,
-    autoplayTimeout: 5000,
+    autoplayTimeout: 10000,
     autoplayHoverPause: true,
     autoplaySpeed: 2500,
   	onInitialized: setCatName,

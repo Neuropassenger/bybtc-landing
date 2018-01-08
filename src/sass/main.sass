@@ -232,8 +232,8 @@
 .catalog
 	background-color: #f7f7f7
 	padding:
-		top: 60px
-		bottom: 60px
+		top: 90px
+		bottom: 90px
 	.content
 		display: flex
 		flex-direction: column
@@ -357,7 +357,10 @@
 				family: 'Open Sans'
 				size: 38px
 		article
-			margin-top: 40px
+			margin: 
+				top: 40px
+				left: 15px
+				right: 15px
 			font:
 				family: 'Myriad Pro'
 				weight: normal
@@ -366,7 +369,7 @@
 			letter-spacing: 0.1em
 			column-count: 2
 			column-gap: 73px
-			column-width: 550px
+			column-width: 500px
 			p
 				margin-top: 40px
 				&:first-child
@@ -383,17 +386,20 @@
 	background-color: $very-light-grey
 	min-height: 300px
 	.content
+		width: auto
 		display: flex
-		justify-content: space-between
+		justify-content: space-around
 		.iphone-ads
-			width: 45%
+			min-width: 470px
 			background: 
 				image: url('../img/iphone.png');
 				size: cover
 				position-x: center
-			height: 700px
+			height: 600px
 		.private-ads-text
-			width: 45%
+			margin-left: 50px
+			margin-right: 50px
+			max-width: 600px
 			h2
 				font:
 					family: 'Open Sans'
@@ -409,15 +415,55 @@
 					size: 16px
 
 .footer-links
+	padding: 
+		top: 50px
+		bottom: 50px
 	background-color: $very-dark-grey
-	min-height: 500px
+	.content
+		align-items: center
+		display: flex
+		justify-content: space-around
+		.item
+			p
+				margin-top: 15px
+				font: 
+					family: 'Myriad Pro'
+					size: 20px
+				color: #fff
+				a
+					color: $accent-color
+					font-weight: bold
+					text-decoration: none
+			h3
+				font: 
+					family: 'Open Sans'
+					weight: bold
+					size: 30px
+				color: #fff
+			text-align: center
+			&:first-child
+				text-align: left
+			&:last-child
+				text-align: right
+			ul 
+				margin-top: 30px
+				a
+					color: #fff
+					text-decoration: none
+					line-height: 22px
+					font:
+						family: 'Myriad Pro'
+						size: 18px
+					&:hover
+						color: $accent-color
 
 .copyrights
 	padding: 
-		top: 50px
-		bottom: 25px
+		top: 25px
+		bottom: 15px
 	background-color: $accent-color
 	.content
+		padding-right: 50px
 		font:
 			family: 'Lato'
 			size: 14px
@@ -430,3 +476,13 @@
 			&:hover
 				text-decoration: underline
 
+.youtube
+	margin:
+		left: auto
+		right: auto
+
+.telegram-logo
+	&:hover
+		transform: translateY(-7px)
+		transform: rotate(360deg)
+		transition: 0.7s

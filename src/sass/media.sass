@@ -9,6 +9,10 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
+	.footer-links, .copyrights
+		.content
+			width: auto
+
 	.capabilities
 		.content
 			.item
@@ -45,6 +49,17 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
+	.private-ads
+		padding:
+				top: 60px
+				bottom: 50px
+		.iphone-ads
+			display: none
+		.private-ads-text
+			max-width: 100% !important
+			h2
+				text-align: center
+
 	.capabilities
 		//background: linear-gradient(-2deg, #f7f7f7 3%, $accent-color 3%, $accent-color 97%, $dark-grey 97%)
 		.content
@@ -76,6 +91,16 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
+	.footer-links
+		.content
+			flex-direction: column
+			.item
+				text-align: center !important
+				&:nth-child(2)
+					margin:
+						top: 50px
+						bottom: 50px
+
 	.catalog
 		h2
 			font-size: 22px !important

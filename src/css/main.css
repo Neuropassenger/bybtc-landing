@@ -57,6 +57,9 @@ table {
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
+  .footer-links .content, .copyrights .content {
+    width: auto;
+  }
   .capabilities .content .item:nth-child(2) {
     margin-right: 100px;
     margin-left: 100px;
@@ -87,6 +90,19 @@ table {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+  .private-ads {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+  .private-ads .iphone-ads {
+    display: none;
+  }
+  .private-ads .private-ads-text {
+    max-width: 100% !important;
+  }
+  .private-ads .private-ads-text h2 {
+    text-align: center;
+  }
   .capabilities .content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -120,6 +136,20 @@ table {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .footer-links .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-links .content .item {
+    text-align: center !important;
+  }
+  .footer-links .content .item:nth-child(2) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
   .catalog h2 {
     font-size: 22px !important;
   }
@@ -719,8 +749,8 @@ table {
 
 .catalog {
   background-color: #f7f7f7;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 .catalog .content {
@@ -887,6 +917,8 @@ table {
 
 .about .content article {
   margin-top: 40px;
+  margin-left: 15px;
+  margin-right: 15px;
   font-family: 'Myriad Pro';
   font-weight: normal;
   font-size: 16px;
@@ -898,9 +930,9 @@ table {
   -webkit-column-gap: 73px;
      -moz-column-gap: 73px;
           column-gap: 73px;
-  -webkit-column-width: 550px;
-     -moz-column-width: 550px;
-          column-width: 550px;
+  -webkit-column-width: 500px;
+     -moz-column-width: 500px;
+          column-width: 500px;
 }
 
 .about .content article p {
@@ -926,27 +958,29 @@ table {
 }
 
 .private-ads .content {
+  width: auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
 }
 
 .private-ads .content .iphone-ads {
-  width: 45%;
+  min-width: 470px;
   background-image: url("../img/iphone.png");
   -webkit-background-size: cover;
           background-size: cover;
   background-position-x: center;
-  height: 700px;
+  height: 600px;
 }
 
 .private-ads .content .private-ads-text {
-  width: 45%;
+  margin-left: 50px;
+  margin-right: 50px;
+  max-width: 600px;
 }
 
 .private-ads .content .private-ads-text h2 {
@@ -965,17 +999,81 @@ table {
 }
 
 .footer-links {
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: #2f313d;
-  min-height: 500px;
+}
+
+.footer-links .content {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+
+.footer-links .content .item {
+  text-align: center;
+}
+
+.footer-links .content .item p {
+  margin-top: 15px;
+  font-family: 'Myriad Pro';
+  font-size: 20px;
+  color: #fff;
+}
+
+.footer-links .content .item p a {
+  color: #58b400;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer-links .content .item h3 {
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-size: 30px;
+  color: #fff;
+}
+
+.footer-links .content .item:first-child {
+  text-align: left;
+}
+
+.footer-links .content .item:last-child {
+  text-align: right;
+}
+
+.footer-links .content .item ul {
+  margin-top: 30px;
+}
+
+.footer-links .content .item ul a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 22px;
+  font-family: 'Myriad Pro';
+  font-size: 18px;
+}
+
+.footer-links .content .item ul a:hover {
+  color: #58b400;
 }
 
 .copyrights {
-  padding-top: 50px;
-  padding-bottom: 25px;
+  padding-top: 25px;
+  padding-bottom: 15px;
   background-color: #58b400;
 }
 
 .copyrights .content {
+  padding-right: 50px;
   font-family: 'Lato';
   font-size: 14px;
   text-align: right;
@@ -990,4 +1088,21 @@ table {
 
 .copyrights .content a:hover {
   text-decoration: underline;
+}
+
+.youtube {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.telegram-logo:hover {
+  -webkit-transform: translateY(-7px);
+      -ms-transform: translateY(-7px);
+          transform: translateY(-7px);
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s;
 }

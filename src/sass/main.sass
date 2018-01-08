@@ -2,6 +2,7 @@
 //@import "../libs/bootstrap/bootstrap-grid.min"
 @import "../sass/media.sass"
 @import "../sass/base-settings.sass"
+@import "../sass/mixins.scss"
 
 /*body
 	box-sizing: content-box
@@ -109,15 +110,16 @@
 
 .capabilities
 	display: flex
-	min-height: 490px
-	background: linear-gradient(-2deg, #f7f7f7 10%, $accent-color 10%, $accent-color 90%, $dark-grey 90%)
+	min-height: 420px
+	background-color: $accent-color
 	.content
 		display: flex
 		align-content: center
 		color: #fff
+		max-height: 20%
 		margin:
-			top: 100px
-			bottom: 100px
+			top: 50px
+			bottom: 50px
 		.item
 			flex-grow: 1
 			max-width: 320px
@@ -342,10 +344,11 @@
 			color: $accent-color
 
 .about
-	background: linear-gradient(-2deg, $very-light-grey 10%, $very-dark-grey 10%, $very-dark-grey 90%, #f7f7f7 90%)
-	min-height: 500px
+	background-color: $very-dark-grey
 	.content
-		padding-top: 90px
+		padding:
+			top: 40px
+			bottom: 40px
 		max-width: 100%
 		color: #fff
 		h2
@@ -376,8 +379,9 @@
 	height: auto
 
 .private-ads
-	background: linear-gradient(-2deg, $very-dark-grey 10%, $very-light-grey 10%, $very-light-grey 90%, $very-light-grey 90%)
-	min-height: 500px
+	padding-top: 150px
+	background-color: $very-light-grey
+	min-height: 300px
 	.content
 		display: flex
 		justify-content: space-between
@@ -387,7 +391,42 @@
 				image: url('../img/iphone.png');
 				size: cover
 				position-x: center
-			height: 800px
+			height: 700px
 		.private-ads-text
 			width: 45%
-		
+			h2
+				font:
+					family: 'Open Sans'
+					font-weight: bold
+					size: 30px
+			p
+				letter-spacing: 0.05em
+				line-height: 25px
+				margin-top: 30px
+				font:
+					family: 'Myriad Pro'
+					font-weight: normal
+					size: 16px
+
+.footer-links
+	background-color: $very-dark-grey
+	min-height: 500px
+
+.copyrights
+	padding: 
+		top: 50px
+		bottom: 25px
+	background-color: $accent-color
+	.content
+		font:
+			family: 'Lato'
+			size: 14px
+		text-align: right
+		letter-spacing: 0.07em
+		color: $very-dark-grey
+		a
+			text-decoration: none
+			color: $very-light-grey
+			&:hover
+				text-decoration: underline
+
